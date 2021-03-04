@@ -33,12 +33,13 @@ router.get('/add', (req, res, next) => {
 // POST process the Book Details page and create a new Book - CREATE
 router.post('/add', (req, res, next) => {
 
-  console.log(req.body);
+  let price = req.body.price;
+
   // a document instance
   let book_new = new book({ Title: req.body.title, 
   Author:  req.body.author, 
   Genre: req.body.genre,
-   Price: Number(req.body.price) });
+  Price: Number(price.replace("$", ""))});
   
   // save model to database
   book.create(book_new, (err, book) =>{
