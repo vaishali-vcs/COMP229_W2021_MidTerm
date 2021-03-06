@@ -39,6 +39,7 @@ router.post('/add', (req, res, next) => {
   let book_new = new book({ Title: req.body.title, 
   Author:  req.body.author, 
   Genre: req.body.genre,
+  Description: req.body.description,
   Price: Number(price.replace("$", ""))});
   
   // save model to database
@@ -82,6 +83,7 @@ router.post('/:id', (req, res, next) => {
         "Title": req.body.title,
         "Author": req.body.author,
         "Genre": req.body.genre,
+        "Description": req.body.description,
         "Price": Number(price.replace("$", "")),
     });
 
