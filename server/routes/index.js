@@ -1,4 +1,11 @@
-// modules required for routing
+/*
+File Name: index.js 
+Name: Vaishali Siddeshwar
+Student ID: 301172372
+Date: Mar-06-2021
+This module has routing logic for Home page
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');

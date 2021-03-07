@@ -1,4 +1,11 @@
-/* custom JS goes here */
+/*
+File Name: app.js 
+Name: Vaishali Siddeshwar
+Student ID: 301172372
+Date: Mar-06-2021
+This module has Client Side JavaScript for 
+confirmation before deletion and form incomplete alerts.
+*/
 
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){

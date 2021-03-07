@@ -1,4 +1,12 @@
-// moddules for node and express
+/*
+File Name: app.js 
+Name: Vaishali Siddeshwar
+Student ID: 301172372
+Date: Mar-06-2021
+This module is responsible for loading express, mongoose and
+other necessary libraries 
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');

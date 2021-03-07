@@ -1,4 +1,11 @@
-// modules required for routing
+/*
+File Name: books.js 
+Name: Vaishali Siddeshwar
+Student ID: 301172372
+Date: Mar-06-2021
+This module has routing logic for CRUD operations on Books.
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -68,6 +75,7 @@ router.get('/:id', (req, res, next) => {
       res.end(err);
     }
     else {
+      // redirect to details with book info
       res.render('books/details', {title: 'Update Book', books: book_to_edit});
     }
   });
